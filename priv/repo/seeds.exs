@@ -1,4 +1,4 @@
-alias Tilex.{Channel}
+alias Tilex.{Repo, Channel}
 
 channels = ["ruby", "react", "javascript", "testing", "phoenix", "elixir", "vim", "erlang", "nodejs"]
 
