@@ -37,7 +37,7 @@ defmodule TilexWeb.AuthController do
       {:ok, email} ->
         attrs = %{
           email: email,
-          username: Developer.format_username(name)
+          username: Developer.format_username(email)
         }
 
         Developer.find_or_create(Repo, attrs)

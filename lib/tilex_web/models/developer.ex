@@ -42,10 +42,9 @@ defmodule Tilex.Developer do
     twitter_handle || Application.get_env(:tilex, :default_twitter_handle)
   end
 
-  def format_username(name) when is_binary(name) do
-    name
-    |> String.downcase()
-    |> String.replace(" ", "")
+  def format_username(email) when is_binary(email) do
+    [username | _] = String.split(email, "@")
+    username
   end
 
   defp clean_twitter_handle(changeset) do

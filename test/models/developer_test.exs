@@ -4,9 +4,9 @@ defmodule Tilex.DeveloperTest do
   alias Tilex.Developer
 
   test "can format its username" do
-    username = "Johnny Appleseed"
-    result = "johnnyappleseed"
-    assert Developer.format_username(username) == result
+    email = "ali@oozou.com"
+    result = "ali"
+    assert Developer.format_username(email) == result
   end
 
   test "changeset strips leading @ symbol from twitter handle" do
