@@ -9,8 +9,8 @@ use Mix.Config
 config :tilex, TilexWeb.Endpoint,
   http: [port: {:system, "PORT"}, compress: true],
   url: [host: System.get_env("HOST"), port: 80],
-  debug_errors: true,
-  code_reloader: true,
+  debug_errors: false,
+  code_reloader: false,
   check_origin: false,
   watchers: [
     node: [
