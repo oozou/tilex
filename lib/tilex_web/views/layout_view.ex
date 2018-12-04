@@ -38,7 +38,7 @@ defmodule TilexWeb.LayoutView do
   end
 
   def twitter_title(_post) do
-    "Today I Learned: a Oozou Project"
+    "Today I Learned: an Oozou project"
   end
 
   def twitter_description(%Tilex.Post{} = post) do
@@ -55,7 +55,7 @@ defmodule TilexWeb.LayoutView do
 
   def twitter_description(_post) do
     """
-    TIL is a Oozou project where we post little snippets of knowledge.
+    TIL is an Oozou project where we post little snippets of knowledge.
     """
   end
 
