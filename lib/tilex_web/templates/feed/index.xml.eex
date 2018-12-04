@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Today I Learned</title>
-    <description>TIL is a Oozou project where we post little snippets of knowledge.
+    <description>TIL is an Oozou project where we post little snippets of knowledge.
     </description>
     <link><%= post_url(@conn, :index) %></link>
     <atom:link href="<%= feed_url(@conn, :index) %>" rel="self" type="application/rss+xml" />

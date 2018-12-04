@@ -59,7 +59,7 @@
       <div>
         <h1><a href="/">Today I Learned</a></h1>
         <h2>
-          <a href="https://oozou.com" class="oz">🐘 A Oozou project</a>
+          <a href="https://oozou.com" class="oz">🐘 An Oozou project</a>
           <span>
             <a href="https://twitter.com/<%= Application.get_env(:tilex, :default_twitter_handle)%>" class="twitter">Follow on Twitter</a>
           </span>
