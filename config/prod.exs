@@ -8,7 +8,7 @@ use Mix.Config
 # with brunch.io to recompile .js and .css sources.
 config :tilex, TilexWeb.Endpoint,
   http: [port: {:system, "PORT"}, compress: true],
-  url: [host: System.get_env("HOST"), port: 443],
+  url: [host: System.get_env("HOST"), port: 80],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
