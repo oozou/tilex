@@ -24,7 +24,7 @@ outdated: ## Shows outdated packages.
 setup: ## Runs the project setup.
 	mix deps.get
 	mix compile
-	mix ecto.setup
+	mix ecto.create && mix ecto.migrate
 	npm install --prefix assets/
 
 server: ## Starts the server.
