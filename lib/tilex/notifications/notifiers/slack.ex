@@ -14,7 +14,7 @@ defmodule Tilex.Notifications.Notifiers.Slack do
 
   use Tilex.Notifications.Notifier
 
-  def handle_post_created(post, developer, channel, url, env \\ Mix.env) when :prod = env do
+  def handle_post_created(post, developer, channel, url, env \\ Mix.env) when env == :prod do
     "#{developer.username} created a new post <#{url}|#{post.title}> ##{channel.name}"
     |> send_slack_message
   end
