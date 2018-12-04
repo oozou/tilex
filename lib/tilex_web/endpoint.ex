@@ -27,7 +27,7 @@ defmodule TilexWeb.Endpoint do
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
-  if code_reloading? && Mix.env == :prod do
+  if code_reloading? && Mix.env == :dev do
     socket("/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket)
     plug(Phoenix.LiveReloader)
     plug(Phoenix.CodeReloader)
